@@ -358,8 +358,54 @@ POST /api/token/transfer
 | React 前端 | 第 3 周 | 钱包连接、DApp 交互 | ✅ 已完成 |
 | 整合完善 | 第 4 周 | 链上交易、元数据、部署 | ✅ 已完成 |
 | AMM DEX | 第 8 周 | 简化版 Uniswap V2：恒定乘积 + 流动性 + Swap | ✅ 已完成 |
+| EVM 底层与 MEV | 第 9-12 周 | Foundry 测试 + Gas 优化 + EVM/Opcode + MEV 防御 | 🔄 进行中 |
 
-## 安全注意事项
+## 第三阶段：EVM 底层与 MEV（phase3-evm-mev 分支）
+
+> 目标：从"能写合约"跨越到"精通合约"——理解 EVM 执行模型、掌握 Gas 优化技巧、建立 MEV 防御意识。
+
+### foundry-phase3 项目
+
+独立的 Foundry 项目，通过符号链接复用 `contracts/src/` 下的合约，添加 Solidity 测试和 Gas 分析。
+
+### Week 9 进展：Foundry 测试套件 + Gas 基线
+
+**71 个测试全部通过**，覆盖 4 个核心合约：
+
+| 合约 | 测试数 | 覆盖范围 |
+|------|--------|---------|
+| MyToken | 13 | supply、transfer、mint权限、maxSupply、approve、EIP-2612 Permit |
+| MyNFT | 14 | mint、batchMint、权限控制、maxSupply、baseURI、transfer |
+| SimpleAMM | 30 | 流动性操作、swap、K值验证、事件、pause、feeTo、sync/skim、slippage |
+| ChainForgeRouter | 14 | 池管理、单跳/多跳查询与swap、slippage、deadline |
+
+**Top 5 最昂贵函数（Gas 基线）：**
+
+| 排名 | 合约 | 函数 | Avg Gas |
+|------|------|------|---------|
+| 1 | SimpleAMM | addLiquidity | 296,198 |
+| 2 | ChainForgeRouter | addPool | 141,392 |
+| 3 | ChainForgeRouter | swapExactTokensForTokens | 140,884 |
+| 4 | MyNFT | batchMint | 99,906 |
+| 5 | SimpleAMM | swap | 57,047 |
+
+### 后续计划
+
+| 周次 | 主题 | 目标 |
+|------|------|------|
+| Week 10 | Gas 优化实战 | 存储槽打包、缓存变量、unchecked循环、calldata优化，目标降低 20%+ |
+| Week 11 | EVM 深入与 Opcode | 字节码分析、Yul 内联汇编、Opcode 调试 |
+| Week 12 | MEV 分析与防御 | Flashbots Protect、Slippage 库、Commit-Reveal、安全交易脚本 |
+
+### 运行测试
+
+```bash
+cd foundry-phase3
+forge test                                    # 运行全部 71 个测试
+forge test --match-contract SimpleAMMTest     # 运行指定合约测试
+forge test --gas-report                       # 生成 Gas 报告
+forge snapshot                                # 生成 Gas 快照
+```
 
 - 永远不要将私钥提交到 Git
 - 使用 `.env` 管理敏感配置
