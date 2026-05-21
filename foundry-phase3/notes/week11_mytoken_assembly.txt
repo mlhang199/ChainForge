@@ -1,0 +1,3875 @@
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x0160
+  dup1
+  0x40
+  mstore
+  jumpi(tag_14, callvalue)
+  bytecodeSize
+  dup1
+  codesize
+  sub
+  dup1
+  swap2
+  tag_8
+  dup3
+  dup6
+  tag_1
+  jump	// in
+tag_8:
+  dup4
+  codecopy
+  dup2
+  add
+  swap1
+  0x80
+  dup2
+  dup4
+  sub
+  slt
+  tag_14
+  jumpi
+  dup1
+  mload
+  sub(shl(0x40, 0x01), 0x01)
+  dup2
+  gt
+  tag_14
+  jumpi
+  dup3
+  tag_13
+  swap2
+  dup4
+  add
+  tag_2
+  jump	// in
+tag_13:
+  0x20
+  dup3
+  add
+  mload
+  swap1
+  swap3
+  sub(shl(0x40, 0x01), 0x01)
+  dup3
+  gt
+  tag_14
+  jumpi
+  tag_16
+  swap2
+  dup4
+  add
+  tag_2
+  jump	// in
+tag_16:
+  swap2
+  0x60
+  0x40
+  dup4
+  add
+  mload
+  swap3
+  add
+  mload
+  swap1
+  0x40
+  swap4
+  dup5
+  mload
+  swap2
+  tag_17
+  dup7
+  dup5
+  tag_1
+  jump	// in
+tag_17:
+  0x01
+  dup4
+  mstore
+  shl(0xf8, 0x31)
+  0x20
+  dup5
+  add
+  swap1
+  dup2
+  mstore
+  dup2
+  mload
+  swap1
+  swap3
+  swap1
+  sub(shl(0x40, 0x01), 0x01)
+  dup2
+  gt
+  tag_31
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sload
+  0x01
+  dup2
+  dup2
+  shr
+  swap2
+  and
+  dup1
+  iszero
+  tag_20
+  jumpi
+tag_21:
+  0x20
+  dup3
+  lt
+  eq
+  tag_35
+  jumpi
+  0x1f
+  dup2
+  gt
+  tag_24
+  jumpi
+tag_25:
+  pop
+  dup1
+  0x20
+  0x1f
+  dup3
+  gt
+  0x01
+  eq
+  tag_26
+  jumpi
+  0x00
+  swap2
+  tag_28
+  jumpi
+tag_29:
+  pop
+  dup2
+  0x01
+  shl
+  swap2
+  not(0x00)
+  swap1
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shl
+  shr
+  not
+  and
+  or
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+tag_30:
+  dup1
+  mload
+  swap1
+  sub(shl(0x40, 0x01), 0x01)
+  dup3
+  gt
+  tag_31
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sload
+  swap1
+  0x01
+  dup3
+  dup2
+  shr
+  swap3
+  and
+  dup1
+  iszero
+  tag_33
+  jumpi
+tag_34:
+  0x20
+  dup4
+  lt
+  eq
+  tag_35
+  jumpi
+  dup2
+  0x1f
+  dup5
+  swap4
+  gt
+  tag_37
+  jumpi
+tag_38:
+  pop
+  0x20
+  swap1
+  0x1f
+  dup4
+  gt
+  0x01
+  eq
+  tag_39
+  jumpi
+  0x00
+  swap3
+  tag_41
+  jumpi
+tag_42:
+  pop
+  pop
+  dup2
+  0x01
+  shl
+  swap2
+  not(0x00)
+  swap1
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shl
+  shr
+  not
+  and
+  or
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+tag_43:
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3401:3446  name.toShortStringWithFallback(_nameFallback) */
+  tag_44
+  dup2
+  tag_4
+  jump	// in
+tag_44:
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3393:3446  _name = name.toShortStringWithFallback(_nameFallback) */
+  0x0120
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3467:3518  version.toShortStringWithFallback(_versionFallback) */
+  tag_45
+  dup4
+  tag_5
+  jump	// in
+tag_45:
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3456:3518  _version = version.toShortStringWithFallback(_versionFallback) */
+  0x0140
+  mstore
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x20
+  dup2
+  mload
+  swap2
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3542:3564  keccak256(bytes(name)) */
+  keccak256
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3528:3564  _hashedName = keccak256(bytes(name)) */
+  swap2
+  dup3
+  0xe0
+  mstore
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3591:3616  keccak256(bytes(version)) */
+  swap1
+  keccak256
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3574:3616  _hashedVersion = keccak256(bytes(version)) */
+  dup1
+  0x0100
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3644:3657  block.chainid */
+  chainid
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3627:3657  _cachedChainId = block.chainid */
+  0xa0
+  mstore
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup5
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+  swap1
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x20
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+  dup3
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  swap3
+  0x8b73c3c69bb8fe3d512ecc4cf759cc79239f7b179b0ffacaa9a75d522b39400f
+  dup5
+  mstore
+  dup7
+  dup4
+  add
+  mstore
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x60
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  dup3
+  add
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3644:3657  block.chainid */
+  chainid
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x80
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  dup3
+  add
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4278:4282  this */
+  address
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3627:3657  _cachedChainId = block.chainid */
+  0xa0
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  dup3
+  add
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3627:3657  _cachedChainId = block.chainid */
+  0xa0
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+  dup2
+  mstore
+  tag_46
+  0xc0
+  dup3
+  tag_1
+  jump	// in
+tag_46:
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4194:4285  keccak256(abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this))) */
+  swap1
+  keccak256
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x80
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3667:3715  _cachedDomainSeparator = _buildDomainSeparator() */
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4278:4282  this */
+  address
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+  0xc0
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3725:3752  _cachedThis = address(this) */
+  mstore
+    /* "src/MyToken.sol":782:792  msg.sender */
+  caller
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1273:1299  initialOwner == address(0) */
+  iszero
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1269:1364  if (initialOwner == address(0)) {... */
+  tag_47
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3004:3010  _owner */
+  0x08
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup1
+  sload
+    /* "src/MyToken.sol":782:792  msg.sender */
+  caller
+  not(sub(shl(0xa0, 0x01), 0x01))
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  and
+  dup2
+  or
+  swap1
+  swap3
+  sstore
+  dup5
+  mload
+  swap2
+    /* "src/MyToken.sol":782:792  msg.sender */
+  swap1
+  sub(shl(0xa0, 0x01), 0x01)
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  and
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3052:3092  OwnershipTransferred(oldOwner, newOwner) */
+  0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0
+  0x00
+  dup1
+  log3
+    /* "src/MyToken.sol":812:827  maxSupply_ == 0 */
+  dup2
+  iszero
+    /* "src/MyToken.sol":812:859  maxSupply_ == 0 || initialSupply_ <= maxSupply_ */
+  dup1
+  iszero
+  tag_49
+  jumpi
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_50:
+  iszero
+  tag_51
+  jumpi
+    /* "src/MyToken.sol":926:942  10 ** decimals() */
+  pop
+    /* "src/MyToken.sol":913:942  maxSupply_ * 10 ** decimals() */
+  tag_53
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x0de0b6b3a7640000
+    /* "src/MyToken.sol":913:942  maxSupply_ * 10 ** decimals() */
+  dup1
+  swap3
+  tag_3
+  jump	// in
+tag_53:
+    /* "src/MyToken.sol":900:942  _maxSupply = maxSupply_ * 10 ** decimals() */
+  0x09
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "src/MyToken.sol":957:975  initialSupply_ > 0 */
+  dup2
+    /* "src/MyToken.sol":953:1054  if (initialSupply_ > 0) {... */
+  tag_54
+  jumpi
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_55:
+  dup3
+  mload
+  dataSize(sub_0)
+  swap1
+  dup2
+  dataOffset(sub_0)
+  dup3
+  codecopy
+  mload(0x80)
+  dup2
+  assignImmutable("0xff86023f246b2cd604439ec36dd08070fda9a84bfebf677a354fd041e3509e75")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3627:3657  _cachedChainId = block.chainid */
+  0xa0
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0x1ed118b890fb17bfde2171d286512a9ec35519f5671f36b3347d34c44d7a13d4")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+  0xc0
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0x0cac94dd8fa8b46dcb473f6a9efd44c79437a341d155face60953ba7292fa128")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3528:3564  _hashedName = keccak256(bytes(name)) */
+  0xe0
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0xcab6b469e411f2f1a1a63b7a352484b6446ac4f04b2cdfa437beb9293c27ba98")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3574:3616  _hashedVersion = keccak256(bytes(version)) */
+  0x0100
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0xcbf74af01cbe1015e9ac85ea14fe824611550c769e9107467f16a4ac714457df")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3393:3446  _name = name.toShortStringWithFallback(_nameFallback) */
+  0x0120
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0xbb918c587be468bd0c7a09b1610bfa1db8d5840ec578636482aa025af3056430")
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3456:3518  _version = version.toShortStringWithFallback(_versionFallback) */
+  0x0140
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mload
+  dup2
+  assignImmutable("0x8e9b7bbc33b685619ed5689e557e91302ac2ee6645fe42592ecee8f114bb3e14")
+  return
+    /* "src/MyToken.sol":953:1054  if (initialSupply_ > 0) {... */
+tag_54:
+    /* "src/MyToken.sol":1009:1042  initialSupply_ * 10 ** decimals() */
+  tag_56
+  swap2
+  tag_3
+  jump	// in
+tag_56:
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6496:6517  _totalSupply += value */
+  0x02
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sload
+  dup2
+  dup2
+  add
+  dup1
+  swap2
+  gt
+  tag_57
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6496:6517  _totalSupply += value */
+  0x02
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "src/MyToken.sol":782:792  msg.sender */
+  caller
+  0x00
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  mstore(0x20, 0x00)
+  dup2
+  0x00
+  keccak256
+  dup2
+  dup2
+  sload
+  add
+  swap1
+  sstore
+  dup2
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  swap1
+  dup2
+  mstore
+  0x00
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+  0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x20
+    /* "src/MyToken.sol":782:792  msg.sender */
+  caller
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+  swap4
+  log3
+    /* "src/MyToken.sol":953:1054  if (initialSupply_ > 0) {... */
+  0x00
+  dup1
+  jump(tag_55)
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_57:
+  mstore(0x00, shl(0xe0, 0x4e487b71))
+  0x11
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  revert(0x00, 0x24)
+tag_51:
+  shl(0xe5, 0x461bcd)
+  dup2
+  mstore
+  0x20
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  add
+  mstore
+  0x1a
+  0x24
+  dup3
+  add
+  mstore
+  0x496e697469616c20737570706c792065786365656473206d6178000000000000
+  0x44
+  dup3
+  add
+  mstore
+  0x64
+  swap1
+  revert
+    /* "src/MyToken.sol":812:859  maxSupply_ == 0 || initialSupply_ <= maxSupply_ */
+tag_49:
+    /* "src/MyToken.sol":831:859  initialSupply_ <= maxSupply_ */
+  pop
+  dup2
+  dup4
+  gt
+  iszero
+    /* "src/MyToken.sol":812:859  maxSupply_ == 0 || initialSupply_ <= maxSupply_ */
+  jump(tag_50)
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1269:1364  if (initialOwner == address(0)) {... */
+tag_47:
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1322:1353  OwnableInvalidOwner(address(0)) */
+  mstore(0x00, shl(0xe0, 0x1e4fbdf7))
+  0x00
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  0x24
+  0x00
+    /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1322:1353  OwnableInvalidOwner(address(0)) */
+  revert
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_41:
+  add
+  mload
+  swap1
+  pop
+  0x00
+  dup1
+  jump(tag_42)
+tag_39:
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+  0x00
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  swap1
+  dup2
+  mstore
+  dup3
+  dup2
+  keccak256
+  swap4
+  pop
+  not(0x1f)
+  dup6
+  and
+  swap1
+tag_59:
+  dup2
+  dup2
+  lt
+  tag_60
+  jumpi
+  pop
+  swap1
+  dup5
+  0x01
+  swap6
+  swap5
+  swap4
+  swap3
+  lt
+  tag_62
+  jumpi
+tag_63:
+  pop
+  pop
+  pop
+  dup2
+  shl
+  add
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+  jump(tag_43)
+tag_62:
+  add
+  mload
+  not(0x00)
+  0xf8
+  dup5
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shl
+  and
+  shr
+  not
+  and
+  swap1
+  sstore
+  0x00
+  dup1
+  dup1
+  jump(tag_63)
+tag_60:
+  swap3
+  swap4
+  0x20
+  0x01
+  dup2
+  swap3
+  dup8
+  dup7
+  add
+  mload
+  dup2
+  sstore
+  add
+  swap6
+  add
+  swap4
+  add
+  jump(tag_59)
+tag_37:
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+  0x00
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  swap1
+  swap2
+  pop
+  0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b
+  0x1f
+  dup5
+  add
+  0x05
+  shr
+  dup2
+  add
+  swap2
+  0x20
+  dup6
+  lt
+  tag_64
+  jumpi
+tag_65:
+  swap1
+  0x1f
+  dup6
+  swap5
+  swap4
+  swap3
+  add
+  0x05
+  shr
+  add
+  swap1
+tag_66:
+  dup2
+  dup2
+  lt
+  tag_67
+  jumpi
+  pop
+  jump(tag_38)
+tag_67:
+  0x00
+  dup2
+  sstore
+  dup5
+  swap4
+  pop
+  0x01
+  add
+  jump(tag_66)
+tag_64:
+  swap1
+  swap2
+  pop
+  dup2
+  swap1
+  jump(tag_65)
+tag_35:
+  mstore(0x00, shl(0xe0, 0x4e487b71))
+  0x22
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  revert(0x00, 0x24)
+tag_33:
+  swap2
+  0x7f
+  and
+  swap2
+  jump(tag_34)
+tag_31:
+  mstore(0x00, shl(0xe0, 0x4e487b71))
+  0x41
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1985:2002  _symbol = symbol_ */
+  0x04
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  revert(0x00, 0x24)
+tag_28:
+  swap1
+  pop
+  dup4
+  add
+  mload
+  0x00
+  jump(tag_29)
+tag_26:
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+  0x00
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  swap1
+  dup2
+  mstore
+  dup2
+  dup2
+  keccak256
+  swap3
+  pop
+  not(0x1f)
+  dup5
+  and
+  swap1
+tag_69:
+  dup2
+  dup2
+  lt
+  tag_70
+  jumpi
+  pop
+  swap1
+  dup4
+  0x01
+  swap5
+  swap4
+  swap3
+  lt
+  tag_72
+  jumpi
+tag_73:
+  pop
+  pop
+  dup2
+  shl
+  add
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+  jump(tag_30)
+tag_72:
+  dup6
+  add
+  mload
+  not(0x00)
+  0xf8
+  dup5
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shl
+  and
+  shr
+  not
+  and
+  swap1
+  sstore
+  0x00
+  dup1
+  jump(tag_73)
+tag_70:
+  swap2
+  swap3
+  0x20
+  0x01
+  dup2
+  swap3
+  dup7
+  dup11
+  add
+  mload
+  dup2
+  sstore
+  add
+  swap5
+  add
+  swap3
+  add
+  jump(tag_69)
+tag_24:
+    /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":1962:1975  _name = name_ */
+  0x03
+  0x00
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  0xc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b
+  0x1f
+  dup4
+  add
+  0x05
+  shr
+  dup2
+  add
+  swap2
+  0x20
+  dup5
+  lt
+  tag_74
+  jumpi
+tag_75:
+  0x1f
+  add
+  0x05
+  shr
+  add
+  swap1
+tag_76:
+  dup2
+  dup2
+  lt
+  tag_77
+  jumpi
+  pop
+  jump(tag_25)
+tag_77:
+  0x00
+  dup2
+  sstore
+  0x01
+  add
+  jump(tag_76)
+tag_74:
+  swap1
+  swap2
+  pop
+  dup2
+  swap1
+  jump(tag_75)
+tag_20:
+  swap1
+  0x7f
+  and
+  swap1
+  jump(tag_21)
+tag_14:
+  0x00
+  dup1
+  revert
+tag_1:
+  0x1f
+  swap1
+  swap2
+  add
+  not(0x1f)
+  and
+  dup2
+  add
+  swap1
+  sub(shl(0x40, 0x01), 0x01)
+  dup3
+  gt
+  swap1
+  dup3
+  lt
+  or
+  tag_31
+  jumpi
+  0x40
+  mstore
+  jump	// out
+tag_2:
+  dup2
+  0x1f
+  dup3
+  add
+  slt
+  iszero
+  tag_14
+  jumpi
+  dup1
+  mload
+  swap1
+  sub(shl(0x40, 0x01), 0x01)
+  dup3
+  gt
+  tag_31
+  jumpi
+  mload(0x40)
+  swap3
+  tag_85
+  0x1f
+  dup5
+  add
+  not(0x1f)
+  and
+  0x20
+  add
+  dup6
+  tag_1
+  jump	// in
+tag_85:
+  dup3
+  dup5
+  mstore
+  0x20
+  dup4
+  dup4
+  add
+  add
+  gt
+  tag_14
+  jumpi
+  dup2
+  0x00
+  swap3
+  0x20
+  dup1
+  swap4
+  add
+  dup4
+  dup7
+  add
+  mcopy
+  dup4
+  add
+  add
+  mstore
+  swap1
+  jump	// out
+tag_3:
+  dup2
+  dup2
+  mul
+  swap3
+  swap2
+  dup2
+  iszero
+  swap2
+  dup5
+  div
+  eq
+  or
+  iszero
+  tag_57
+  jumpi
+  jump	// out
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2914:3254  function toShortStringWithFallback(string memory value, string storage store) internal returns (ShortString) {... */
+tag_4:
+  swap1
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3037:3061  bytes(value).length < 32 */
+  dup2
+  lt
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+  0x00
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  eq
+  tag_90
+  jumpi
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  pop
+  swap1
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1854:1856  31 */
+  0x1f
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1840:1856  bstr.length > 31 */
+  gt
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1836:1908  if (bstr.length > 31) {... */
+  tag_92
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+  swap2
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  lt
+  tag_94
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1949:1985  uint256(bytes32(bstr)) | bstr.length */
+  or
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3077:3104  return toShortString(value) */
+  swap1
+  jump	// out
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_94:
+  not(0x00)
+  dup3
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sub
+  0x03
+  shl
+  shl
+  and
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1949:1985  uint256(bytes32(bstr)) | bstr.length */
+  or
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3077:3104  return toShortString(value) */
+  swap1
+  jump	// out
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1836:1908  if (bstr.length > 31) {... */
+tag_92:
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x44
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  swap2
+  mload(0x40)
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1879:1897  StringTooLong(str) */
+  swap3
+  dup4
+  swap2
+  shl(0xe0, 0x305a27a9)
+  dup4
+  mstore
+  dup2
+  0x04
+  dup5
+  add
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  mstore
+  dup1
+  mload
+  swap2
+  dup3
+  swap2
+  dup3
+  0x24
+  dup7
+  add
+  mstore
+  add
+  dup5
+  dup5
+  add
+  mcopy
+  0x00
+  dup3
+  dup3
+  add
+  dup5
+  add
+  mstore
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1854:1856  31 */
+  0x1f
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  add
+  not(0x1f)
+  and
+  dup2
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1879:1897  StringTooLong(str) */
+  sub
+  add
+  swap1
+  revert
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_90:
+  sub(shl(0x40, 0x01), 0x01)
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  gt
+  tag_31
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sload
+  0x01
+  dup2
+  dup2
+  shr
+  swap2
+  and
+  dup1
+  iszero
+  tag_98
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_99:
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  lt
+  eq
+  tag_35
+  jumpi
+  0x1f
+  dup2
+  gt
+  tag_102
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_103:
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  pop
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  swap3
+  0x1f
+  dup3
+  gt
+  0x01
+  eq
+  tag_104
+  jumpi
+  swap3
+  dup2
+  swap3
+  swap4
+  0x00
+  swap3
+  tag_106
+  jumpi
+tag_107:
+  pop
+  pop
+  dup2
+  0x01
+  shl
+  swap2
+  not(0x00)
+  swap1
+  0x03
+  shl
+  shr
+  not
+  and
+  or
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+  0xff
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3195:3237  return ShortString.wrap(FALLBACK_SENTINEL) */
+  swap1
+  jump	// out
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_106:
+  add
+  mload
+  swap1
+  pop
+  0x00
+  dup1
+  jump(tag_107)
+tag_104:
+  not(0x1f)
+  dup3
+  and
+  swap4
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  mstore
+  dup1
+  0x00
+  keccak256
+  swap2
+  0x00
+tag_109:
+  dup7
+  dup2
+  lt
+  tag_110
+  jumpi
+  pop
+  dup4
+  0x01
+  swap6
+  swap7
+  lt
+  tag_112
+  jumpi
+tag_113:
+  pop
+  pop
+  pop
+  dup2
+  shl
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+  0xff
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3195:3237  return ShortString.wrap(FALLBACK_SENTINEL) */
+  swap1
+  jump	// out
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_112:
+  add
+  mload
+  not(0x00)
+  0xf8
+  dup5
+  0x03
+  shl
+  and
+  shr
+  not
+  and
+  swap1
+  sstore
+  0x00
+  dup1
+  dup1
+  jump(tag_113)
+tag_110:
+  swap2
+  swap3
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x01
+  dup2
+  swap3
+  dup7
+  dup6
+  add
+  mload
+  dup2
+  sstore
+  add
+  swap5
+  add
+  swap3
+  add
+  jump(tag_109)
+tag_102:
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  mstore
+  0x1f
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  keccak256
+  swap2
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shr
+  dup2
+  add
+  swap1
+  0x1f
+  dup4
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3432:3445  _nameFallback */
+  0x05
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  shr
+  add
+tag_114:
+  dup2
+  dup2
+  lt
+  tag_115
+  jumpi
+  pop
+  jump(tag_103)
+tag_115:
+  0x00
+  dup2
+  sstore
+  0x01
+  add
+  jump(tag_114)
+tag_98:
+  swap1
+  0x7f
+  and
+  swap1
+  jump(tag_99)
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2914:3254  function toShortStringWithFallback(string memory value, string storage store) internal returns (ShortString) {... */
+tag_5:
+  swap1
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3037:3061  bytes(value).length < 32 */
+  dup2
+  lt
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+  0x00
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  eq
+  tag_117
+  jumpi
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  pop
+  swap1
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1854:1856  31 */
+  0x1f
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1840:1856  bstr.length > 31 */
+  gt
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1836:1908  if (bstr.length > 31) {... */
+  tag_92
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  mload
+  swap2
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+  mload
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  lt
+  tag_94
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1949:1985  uint256(bytes32(bstr)) | bstr.length */
+  or
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3077:3104  return toShortString(value) */
+  swap1
+  jump	// out
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_117:
+  sub(shl(0x40, 0x01), 0x01)
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup2
+  gt
+  tag_31
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3501:3517  _versionFallback */
+  0x06
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sload
+  0x01
+  dup2
+  dup2
+  shr
+  swap2
+  and
+  dup1
+  iszero
+  tag_125
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_126:
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  dup3
+  lt
+  eq
+  tag_35
+  jumpi
+  0x1f
+  dup2
+  gt
+  tag_129
+  jumpi
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3033:3248  if (bytes(value).length < 32) {... */
+tag_130:
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  pop
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  swap3
+  0x1f
+  dup3
+  gt
+  0x01
+  eq
+  tag_131
+  jumpi
+  swap3
+  dup2
+  swap3
+  swap4
+  0x00
+  swap3
+  tag_133
+  jumpi
+tag_134:
+  pop
+  pop
+  dup2
+  0x01
+  shl
+  swap2
+  not(0x00)
+  swap1
+  0x03
+  shl
+  shr
+  not
+  and
+  or
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3501:3517  _versionFallback */
+  0x06
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+  0xff
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3195:3237  return ShortString.wrap(FALLBACK_SENTINEL) */
+  swap1
+  jump	// out
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_133:
+  add
+  mload
+  swap1
+  pop
+  0x00
+  dup1
+  jump(tag_134)
+tag_131:
+  not(0x1f)
+  dup3
+  and
+  swap4
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3501:3517  _versionFallback */
+  0x06
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  mstore
+  dup1
+  0x00
+  keccak256
+  swap2
+  0x00
+tag_136:
+  dup7
+  dup2
+  lt
+  tag_137
+  jumpi
+  pop
+  dup4
+  0x01
+  swap6
+  swap7
+  lt
+  tag_139
+  jumpi
+tag_140:
+  pop
+  pop
+  pop
+  dup2
+  shl
+  add
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3501:3517  _versionFallback */
+  0x06
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  sstore
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+  0xff
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3195:3237  return ShortString.wrap(FALLBACK_SENTINEL) */
+  swap1
+  jump	// out
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+tag_139:
+  add
+  mload
+  not(0x00)
+  0xf8
+  dup5
+  0x03
+  shl
+  and
+  shr
+  not
+  and
+  swap1
+  sstore
+  0x00
+  dup1
+  dup1
+  jump(tag_140)
+tag_137:
+  swap2
+  swap3
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x01
+  dup2
+  swap3
+  dup7
+  dup6
+  add
+  mload
+  dup2
+  sstore
+  add
+  swap5
+  add
+  swap3
+  add
+  jump(tag_136)
+tag_129:
+    /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3501:3517  _versionFallback */
+  0x06
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  mstore
+  0x1f
+    /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3059:3061  32 */
+  0x20
+    /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+  0x00
+  keccak256
+  swap2
+  add
+  0x05
+  shr
+  dup2
+  add
+  swap1
+  0x1f
+  dup4
+  add
+  0x05
+  shr
+  add
+tag_141:
+  dup2
+  dup2
+  lt
+  tag_142
+  jumpi
+  pop
+  jump(tag_130)
+tag_142:
+  0x00
+  dup2
+  sstore
+  0x01
+  add
+  jump(tag_141)
+tag_125:
+  swap1
+  0x7f
+  and
+  swap1
+  jump(tag_126)
+stop
+
+sub_0: assembly {
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x80
+      dup1
+      0x40
+      mstore
+      jumpi(tag_16, iszero(lt(calldatasize, 0x04)))
+      0x00
+      dup1
+      revert
+    tag_16:
+      shr(0xe0, calldataload(0x00))
+      swap1
+      dup2
+      0x06fdde03
+      eq
+      tag_18
+      jumpi
+      pop
+      dup1
+      0x095ea7b3
+      eq
+      tag_20
+      jumpi
+      dup1
+      0x18160ddd
+      eq
+      tag_22
+      jumpi
+      dup1
+      0x23b872dd
+      eq
+      tag_24
+      jumpi
+      dup1
+      0x313ce567
+      eq
+      tag_26
+      jumpi
+      dup1
+      0x3644e515
+      eq
+      tag_28
+      jumpi
+      dup1
+      0x40c10f19
+      eq
+      tag_30
+      jumpi
+      dup1
+      0x70a08231
+      eq
+      tag_32
+      jumpi
+      dup1
+      0x715018a6
+      eq
+      tag_34
+      jumpi
+      dup1
+      0x7ecebe00
+      eq
+      tag_36
+      jumpi
+      dup1
+      0x84b0196e
+      eq
+      tag_38
+      jumpi
+      dup1
+      0x8da5cb5b
+      eq
+      tag_40
+      jumpi
+      dup1
+      0x95d89b41
+      eq
+      tag_42
+      jumpi
+      dup1
+      0xa9059cbb
+      eq
+      tag_44
+      jumpi
+      dup1
+      0xd505accf
+      eq
+      tag_46
+      jumpi
+      dup1
+      0xd5abeb01
+      eq
+      tag_48
+      jumpi
+      dup1
+      0xdd62ed3e
+      eq
+      tag_50
+      jumpi
+      0xf2fde38b
+      eq
+      tag_52
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_52:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x20))
+      tag_58
+      tag_2
+      jump	// in
+    tag_58:
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1500:1562  modifier onlyOwner() {... */
+      tag_59
+      tag_10
+      jump	// in
+    tag_59:
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2627:2649  newOwner == address(0) */
+      dup1
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2623:2714  if (newOwner == address(0)) {... */
+      tag_60
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3004:3010  _owner */
+      0x08
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup1
+      sload
+      not(sub(shl(0xa0, 0x01), 0x01))
+      dup2
+      and
+      dup4
+      or
+      swap1
+      swap2
+      sstore
+      sub(shl(0xa0, 0x01), 0x01)
+      and
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3052:3092  OwnershipTransferred(oldOwner, newOwner) */
+      0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0
+      0x00
+      dup1
+      log3
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      stop
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2623:2714  if (newOwner == address(0)) {... */
+    tag_60:
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2672:2703  OwnableInvalidOwner(address(0)) */
+      shl(0xe0, 0x1e4fbdf7)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2672:2703  OwnableInvalidOwner(address(0)) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore(0x04, 0x00)
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":2672:2703  OwnableInvalidOwner(address(0)) */
+      revert
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_56:
+      0x00
+      dup1
+      revert
+    tag_50:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x40))
+      tag_66
+      tag_2
+      jump	// in
+    tag_66:
+      tag_67
+      tag_3
+      jump	// in
+    tag_67:
+      sub(shl(0xa0, 0x01), 0x01)
+      swap2
+      dup3
+      and
+      0x00
+      swap1
+      dup2
+      mstore
+      0x01
+      0x20
+      swap1
+      dup2
+      mstore
+      0x40
+      dup1
+      dup4
+      keccak256
+      swap5
+      swap1
+      swap4
+      and
+      dup3
+      mstore
+      swap3
+      dup4
+      mstore
+      dup2
+      swap1
+      keccak256
+      sload
+      swap1
+      mload
+      swap1
+      dup2
+      mstore
+      return
+    tag_48:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      0x20
+        /* "src/MyToken.sol":1591:1601  _maxSupply */
+      0x09
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+      return
+    tag_46:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0xe0))
+      tag_76
+      tag_2
+      jump	// in
+    tag_76:
+      tag_77
+      tag_3
+      jump	// in
+    tag_77:
+      calldataload(0x44)
+      swap1
+      calldataload(0x64)
+      swap3
+      calldataload(0x84)
+      0xff
+      dup2
+      and
+      dup2
+      sub
+      tag_56
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1883:1898  block.timestamp */
+      dup5
+      timestamp
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1883:1909  block.timestamp > deadline */
+      gt
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1879:1976  if (block.timestamp > deadline) {... */
+      tag_80
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6967:6992  tryRecover(hash, v, r, s) */
+      tag_82
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7021:7029  errorArg */
+      tag_83
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap2
+      0x01
+      dup1
+      0xa0
+      shl
+      sub
+      dup5
+      and
+      swap7
+      dup8
+      0x00
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/Nonces.sol":1121:1128  _nonces */
+      0x07
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      mstore
+      keccak256(0x00, 0x40)
+      swap1
+      dup2
+      sload
+      swap2
+      0x01
+      dup4
+      add
+      swap1
+      sstore
+      mload(0x40)
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2017:2095  abi.encode(PERMIT_TYPEHASH, owner, spender, value, _useNonce(owner), deadline) */
+      swap1
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2017:2095  abi.encode(PERMIT_TYPEHASH, owner, spender, value, _useNonce(owner), deadline) */
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap3
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup5
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup11
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup5
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0x01
+      dup1
+      0xa0
+      shl
+      sub
+      dup10
+      and
+      0x60
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup5
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup10
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x80
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup5
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0xa0
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup4
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0xc0
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1022:1117  keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)") */
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0xc0
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2017:2095  abi.encode(PERMIT_TYPEHASH, owner, spender, value, _useNonce(owner), deadline) */
+      dup2
+      mstore
+      tag_84
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0xe0
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2017:2095  abi.encode(PERMIT_TYPEHASH, owner, spender, value, _useNonce(owner), deadline) */
+      dup3
+      tag_6
+      jump	// in
+    tag_84:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2007:2096  keccak256(abi.encode(PERMIT_TYPEHASH, owner, spender, value, _useNonce(owner), deadline)) */
+      swap1
+      keccak256
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":5053:5073  _domainSeparatorV4() */
+      tag_85
+      tag_9
+      jump	// in
+    tag_85:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol":3515:3748  assembly {... */
+      swap1
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol":3515:3748  assembly {... */
+      mload
+      swap2
+      shl(0xf0, 0x1901)
+      dup4
+      mstore
+      0x02
+      dup4
+      add
+      mstore
+      0x22
+      dup3
+      add
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      calldataload(0xc4)
+      swap2
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol":3515:3748  assembly {... */
+      0x42
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      calldataload(0xa4)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol":3515:3748  assembly {... */
+      swap3
+      keccak256
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6967:6992  tryRecover(hash, v, r, s) */
+      tag_14
+      jump	// in
+    tag_82:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7021:7029  errorArg */
+      swap1
+      swap3
+      swap2
+      swap3
+      tag_15
+      jump	// in
+    tag_83:
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2220:2235  signer != owner */
+      dup5
+      dup2
+      sub
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2216:2304  if (signer != owner) {... */
+      tag_86
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9105:9109  true */
+      pop
+      tag_88
+      swap4
+      pop
+      tag_11
+      jump	// in
+    tag_88:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      stop
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2216:2304  if (signer != owner) {... */
+    tag_86:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2258:2293  ERC2612InvalidSigner(signer, owner) */
+      dup5
+      swap1
+      shl(0xe1, 0x25c00723)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2258:2293  ERC2612InvalidSigner(signer, owner) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      mstore
+      0x24
+      mstore
+      0x44
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2258:2293  ERC2612InvalidSigner(signer, owner) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1879:1976  if (block.timestamp > deadline) {... */
+    tag_80:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1932:1965  ERC2612ExpiredSignature(deadline) */
+      dup5
+      shl(0xe1, 0x313c8981)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1932:1965  ERC2612ExpiredSignature(deadline) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      mstore
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":1932:1965  ERC2612ExpiredSignature(deadline) */
+      revert
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_44:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x40))
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3754:3759  value */
+      tag_93
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      tag_94
+      tag_2
+      jump	// in
+    tag_94:
+      calldataload(0x24)
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      swap1
+      caller
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3754:3759  value */
+      tag_8
+      jump	// in
+    tag_93:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      mload(0x40)
+      0x01
+      dup2
+      mstore
+      return
+    tag_42:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      mload(0x40)
+      0x00
+      sload(0x04)
+      tag_99
+      dup2
+      tag_4
+      jump	// in
+    tag_99:
+      dup1
+      dup5
+      mstore
+      swap1
+      0x01
+      dup2
+      and
+      swap1
+      dup2
+      iszero
+      tag_100
+      jumpi
+      pop
+      0x01
+      eq
+      tag_102
+      jumpi
+    tag_103:
+      tag_104
+      dup4
+      tag_105
+      dup2
+      dup6
+      sub
+      dup3
+      tag_6
+      jump	// in
+    tag_105:
+      mload(0x40)
+      swap2
+      dup3
+      swap2
+      0x20
+      dup4
+      mstore
+      0x20
+      dup4
+      add
+      swap1
+      tag_1
+      jump	// in
+    tag_104:
+      sub
+      swap1
+      return
+    tag_102:
+      0x04
+      0x00
+      swap1
+      dup2
+      mstore
+      0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b
+      swap4
+      swap3
+      pop
+      swap1
+    tag_106:
+      dup1
+      dup3
+      lt
+      tag_107
+      jumpi
+      pop
+      swap1
+      swap2
+      pop
+      dup2
+      add
+      0x20
+      add
+      tag_105
+      jump(tag_103)
+    tag_107:
+      swap2
+      swap3
+      0x01
+      dup2
+      0x20
+      swap3
+      sload
+      dup4
+      dup6
+      dup9
+      add
+      add
+      mstore
+      add
+      swap2
+      add
+      swap1
+      swap3
+      swap2
+      jump(tag_106)
+    tag_100:
+      not(0xff)
+      and
+      0x20
+      dup1
+      dup7
+      add
+      swap2
+      swap1
+      swap2
+      mstore
+      swap2
+      iszero
+      iszero
+      0x05
+      shl
+      dup5
+      add
+      swap1
+      swap2
+      add
+      swap2
+      pop
+      tag_105
+      swap1
+      pop
+      jump(tag_103)
+    tag_40:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1710:1716  _owner */
+      0x08
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+      mload(0x40)
+      sub(shl(0xa0, 0x01), 0x01)
+      swap1
+      swap2
+      and
+      dup2
+      mstore
+      0x20
+      swap1
+      return
+    tag_38:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      tag_117
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6099:6140  _name.toStringWithFallback(_nameFallback) */
+      tag_118
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6099:6104  _name */
+      immutable("0xbb918c587be468bd0c7a09b1610bfa1db8d5840ec578636482aa025af3056430")
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6099:6140  _name.toStringWithFallback(_nameFallback) */
+      tag_12
+      jump	// in
+    tag_118:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6554:6601  _version.toStringWithFallback(_versionFallback) */
+      tag_119
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6554:6562  _version */
+      immutable("0x8e9b7bbc33b685619ed5689e557e91302ac2ee6645fe42592ecee8f114bb3e14")
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6554:6601  _version.toStringWithFallback(_versionFallback) */
+      tag_13
+      jump	// in
+    tag_119:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      tag_120
+      mload(0x40)
+      swap3
+      tag_121
+      dup4
+      dup6
+      tag_6
+      jump	// in
+    tag_121:
+      0x00
+      dup5
+      mstore
+      0x00
+      calldatasize
+      dup2
+      calldatacopy
+      mload(0x40)
+      swap6
+      dup7
+      swap6
+      shl(0xf8, 0x0f)
+      dup8
+      mstore
+      0xe0
+      dup6
+      dup9
+      add
+      mstore
+      0xe0
+      dup8
+      add
+      swap1
+      tag_1
+      jump	// in
+    tag_117:
+      swap1
+      dup6
+      dup3
+      sub
+      0x40
+      dup8
+      add
+      mstore
+      tag_1
+      jump	// in
+    tag_120:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":5590:5603  block.chainid */
+      chainid
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x60
+      dup6
+      add
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":5625:5629  this */
+      address
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x80
+      dup6
+      add
+      mstore
+      0x00
+      0xa0
+      dup6
+      add
+      mstore
+      dup4
+      dup2
+      sub
+      0xc0
+      dup6
+      add
+      mstore
+      dup2
+      dup1
+      dup5
+      mload
+      swap3
+      dup4
+      dup2
+      mstore
+      add
+      swap4
+      add
+      swap2
+      0x00
+    tag_122:
+      dup3
+      dup2
+      lt
+      tag_123
+      jumpi
+      pop
+      pop
+      pop
+      pop
+      sub
+      swap1
+      return
+    tag_123:
+      dup4
+      mload
+      dup6
+      mstore
+      dup7
+      swap6
+      pop
+      swap4
+      dup2
+      add
+      swap4
+      swap3
+      dup2
+      add
+      swap3
+      0x01
+      add
+      jump(tag_122)
+    tag_36:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x20))
+      sub(shl(0xa0, 0x01), 0x01)
+      tag_129
+      tag_2
+      jump	// in
+    tag_129:
+      and
+      0x00
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/Nonces.sol":624:631  _nonces */
+      0x07
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      mstore
+      0x20
+      sload(keccak256(0x00, 0x40))
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+      return
+    tag_34:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1500:1562  modifier onlyOwner() {... */
+      tag_134
+      tag_10
+      jump	// in
+    tag_134:
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3004:3010  _owner */
+      0x08
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup1
+      sload
+      not(sub(shl(0xa0, 0x01), 0x01))
+      dup2
+      and
+      swap1
+      swap2
+      sstore
+      0x00
+      swap1
+      sub(shl(0xa0, 0x01), 0x01)
+      and
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3052:3092  OwnershipTransferred(oldOwner, newOwner) */
+      0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup3
+      dup1
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":3052:3092  OwnershipTransferred(oldOwner, newOwner) */
+      log3
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      stop
+    tag_32:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x20))
+      sub(shl(0xa0, 0x01), 0x01)
+      tag_139
+      tag_2
+      jump	// in
+    tag_139:
+      and
+      0x00
+      mstore
+      mstore(0x20, 0x00)
+      0x20
+      sload(keccak256(0x00, 0x40))
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+      return
+    tag_30:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x40))
+      tag_144
+      tag_2
+      jump	// in
+    tag_144:
+      calldataload(0x24)
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1500:1562  modifier onlyOwner() {... */
+      swap1
+      tag_145
+      tag_10
+      jump	// in
+    tag_145:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x0de0b6b3a7640000
+      dup3
+      mul
+      swap2
+      dup1
+      dup4
+      div
+      0x0de0b6b3a7640000
+      eq
+      swap1
+      iszero
+      or
+      iszero
+      tag_146
+      jumpi
+        /* "src/MyToken.sol":1274:1284  _maxSupply */
+      0x09
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+        /* "src/MyToken.sol":1274:1288  _maxSupply > 0 */
+      dup1
+        /* "src/MyToken.sol":1270:1394  if (_maxSupply > 0) {... */
+      tag_148
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_149:
+      pop
+      sub(shl(0xa0, 0x01), 0x01)
+      and
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7791:7812  account == address(0) */
+      dup2
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7787:7878  if (account == address(0)) {... */
+      tag_150
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+      0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      dup3
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6496:6517  _totalSupply += value */
+      tag_152
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+      swap5
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6496:6517  _totalSupply += value */
+      0x02
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6496:6517  _totalSupply += value */
+      tag_7
+      jump	// in
+    tag_152:
+      0x02
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sstore
+      dup5
+      dup5
+      mstore
+      dup4
+      dup3
+      mstore
+      0x40
+      dup5
+      keccak256
+      dup2
+      dup2
+      sload
+      add
+      swap1
+      sstore
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+      log3
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      stop
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7787:7878  if (account == address(0)) {... */
+    tag_150:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7835:7867  ERC20InvalidReceiver(address(0)) */
+      shl(0xe0, 0xec442f05)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7835:7867  ERC20InvalidReceiver(address(0)) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore(0x04, 0x00)
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7835:7867  ERC20InvalidReceiver(address(0)) */
+      revert
+        /* "src/MyToken.sol":1270:1394  if (_maxSupply > 0) {... */
+    tag_148:
+        /* "src/MyToken.sol":1312:1346  totalSupply() + amountWithDecimals */
+      tag_153
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup4
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3222:3234  _totalSupply */
+      0x02
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+        /* "src/MyToken.sol":1312:1346  totalSupply() + amountWithDecimals */
+      tag_7
+      jump	// in
+    tag_153:
+        /* "src/MyToken.sol":1312:1360  totalSupply() + amountWithDecimals <= _maxSupply */
+      gt
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      tag_154
+      jumpi
+        /* "src/MyToken.sol":1270:1394  if (_maxSupply > 0) {... */
+      dup3
+      jump(tag_149)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_154:
+      mload(0x40)
+      shl(0xe5, 0x461bcd)
+      dup2
+      mstore
+      0x20
+      0x04
+      dup3
+      add
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3075:3077  18 */
+      0x12
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x24
+      dup3
+      add
+      mstore
+      shl(0x70, 0x45786365656473206d617820737570706c79)
+      0x44
+      dup3
+      add
+      mstore
+      0x64
+      swap1
+      revert
+    tag_146:
+      mstore(0x00, shl(0xe0, 0x4e487b71))
+      mstore(0x04, 0x11)
+      revert(0x00, 0x24)
+    tag_28:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      0x20
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol":2741:2761  _domainSeparatorV4() */
+      tag_160
+      tag_9
+      jump	// in
+    tag_160:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+      return
+    tag_26:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      0x20
+      mload(0x40)
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3075:3077  18 */
+      0x12
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup2
+      mstore
+      return
+    tag_24:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x60))
+      tag_169
+      tag_2
+      jump	// in
+    tag_169:
+      tag_170
+      tag_3
+      jump	// in
+    tag_170:
+      sub(shl(0xa0, 0x01), 0x01)
+      dup3
+      and
+      0x00
+      dup2
+      dup2
+      mstore
+      0x01
+      0x20
+      dup2
+      dup2
+      mstore
+      0x40
+      dup1
+      dup5
+      keccak256
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup6
+      mstore
+      swap1
+      swap2
+      mstore
+      swap1
+      swap2
+      keccak256
+      sload
+      swap2
+      swap4
+      calldataload(0x44)
+      swap4
+      swap3
+      swap1
+      swap2
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10828:10865  currentAllowance != type(uint256).max */
+      dup2
+      add
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10824:11134  if (currentAllowance != type(uint256).max) {... */
+      tag_171
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_172:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5249:5254  value */
+      pop
+      tag_93
+      swap4
+      pop
+      tag_8
+      jump	// in
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10824:11134  if (currentAllowance != type(uint256).max) {... */
+    tag_171:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10885:10909  currentAllowance < value */
+      dup4
+      dup2
+      lt
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10881:11011  if (currentAllowance < value) {... */
+      tag_174
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10061:10080  owner == address(0) */
+      dup5
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10057:10146  if (owner == address(0)) {... */
+      tag_176
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10159:10180  spender == address(0) */
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10155:10245  if (spender == address(0)) {... */
+      tag_178
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5249:5254  value */
+      tag_93
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap5
+      0x00
+      mstore
+      mstore(0x20, 0x01)
+      keccak256(0x00, 0x40)
+      0x01
+      dup1
+      0xa0
+      shl
+      sub
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+      0x00
+      mstore
+      0x20
+      mstore
+      dup4
+      keccak256(0x00, 0x40)
+      swap2
+      sub
+      swap1
+      sstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10824:11134  if (currentAllowance != type(uint256).max) {... */
+      dup5
+      jump(tag_172)
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10155:10245  if (spender == address(0)) {... */
+    tag_178:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10203:10234  ERC20InvalidSpender(address(0)) */
+      shl(0xe1, 0x4a1406b1)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10203:10234  ERC20InvalidSpender(address(0)) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore(0x04, 0x00)
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10203:10234  ERC20InvalidSpender(address(0)) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10057:10146  if (owner == address(0)) {... */
+    tag_176:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10103:10135  ERC20InvalidApprover(address(0)) */
+      shl(0xe0, 0xe602df05)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10103:10135  ERC20InvalidApprover(address(0)) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore(0x04, 0x00)
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10103:10135  ERC20InvalidApprover(address(0)) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10881:11011  if (currentAllowance < value) {... */
+    tag_174:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10936:10996  ERC20InsufficientAllowance(spender, currentAllowance, value) */
+      dup4
+      swap1
+      shl(0xe1, 0x7dc7a0d9)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10936:10996  ERC20InsufficientAllowance(spender, currentAllowance, value) */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      mstore
+      0x24
+      mstore
+      0x44
+      mstore
+      0x64
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10936:10996  ERC20InsufficientAllowance(spender, currentAllowance, value) */
+      revert
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_22:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      0x20
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":3222:3234  _totalSupply */
+      0x02
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+      return
+    tag_20:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x40))
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9105:9109  true */
+      tag_93
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      tag_189
+      tag_2
+      jump	// in
+    tag_189:
+      calldataload(0x24)
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      swap1
+      caller
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9105:9109  true */
+      tag_11
+      jump	// in
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_18:
+      jumpi(tag_56, callvalue)
+      jumpi(tag_56, slt(add(not(0x03), calldatasize), 0x00))
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":2151:2156  _name */
+      0x03
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+      tag_194
+      dup2
+      tag_4
+      jump	// in
+    tag_194:
+      dup1
+      dup5
+      mstore
+      swap1
+      0x01
+      dup2
+      and
+      swap1
+      dup2
+      iszero
+      tag_100
+      jumpi
+      pop
+      0x01
+      eq
+      tag_197
+      jumpi
+      tag_104
+      dup4
+      tag_105
+      dup2
+      dup6
+      sub
+      dup3
+      tag_6
+      jump	// in
+    tag_197:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":2151:2156  _name */
+      0x03
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x00
+      swap1
+      dup2
+      mstore
+      0xc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b
+      swap4
+      swap3
+      pop
+      swap1
+    tag_201:
+      dup1
+      dup3
+      lt
+      tag_202
+      jumpi
+      pop
+      swap1
+      swap2
+      pop
+      dup2
+      add
+      0x20
+      add
+      tag_105
+      jump(tag_103)
+    tag_202:
+      swap2
+      swap3
+      0x01
+      dup2
+      0x20
+      swap3
+      sload
+      dup4
+      dup6
+      dup9
+      add
+      add
+      mstore
+      add
+      swap2
+      add
+      swap1
+      swap3
+      swap2
+      jump(tag_201)
+    tag_1:
+      dup1
+      mload
+      dup1
+      dup4
+      mstore
+      0x20
+      swap3
+      swap2
+      dup2
+      swap1
+      dup5
+      add
+      dup5
+      dup5
+      add
+      mcopy
+      0x00
+      dup3
+      dup3
+      add
+      dup5
+      add
+      mstore
+      0x1f
+      add
+      not(0x1f)
+      and
+      add
+      add
+      swap1
+      jump	// out
+    tag_2:
+      calldataload(0x04)
+      swap1
+      sub(shl(0xa0, 0x01), 0x01)
+      dup3
+      and
+      dup3
+      sub
+      tag_56
+      jumpi
+      jump	// out
+    tag_3:
+      calldataload(0x24)
+      swap1
+      sub(shl(0xa0, 0x01), 0x01)
+      dup3
+      and
+      dup3
+      sub
+      tag_56
+      jumpi
+      jump	// out
+    tag_4:
+      swap1
+      0x01
+      dup3
+      dup2
+      shr
+      swap3
+      and
+      dup1
+      iszero
+      tag_208
+      jumpi
+    tag_209:
+      0x20
+      dup4
+      lt
+      eq
+      tag_210
+      jumpi
+      jump	// out
+    tag_210:
+      mstore(0x00, shl(0xe0, 0x4e487b71))
+      mstore(0x04, 0x22)
+      revert(0x00, 0x24)
+    tag_208:
+      swap2
+      0x7f
+      and
+      swap2
+      jump(tag_209)
+    tag_5:
+      0x00
+      swap3
+      swap2
+      dup2
+      sload
+      swap2
+      tag_212
+      dup4
+      tag_4
+      jump	// in
+    tag_212:
+      dup1
+      dup4
+      mstore
+      swap3
+      0x01
+      dup2
+      and
+      swap1
+      dup2
+      iszero
+      tag_213
+      jumpi
+      pop
+      0x01
+      eq
+      tag_215
+      jumpi
+      pop
+      pop
+      pop
+      jump	// out
+    tag_215:
+      0x00
+      swap1
+      dup2
+      mstore
+      0x20
+      dup2
+      keccak256
+      swap4
+      swap5
+      pop
+      swap2
+      swap3
+    tag_217:
+      dup4
+      dup4
+      lt
+      tag_218
+      jumpi
+      pop
+      0x20
+      swap3
+      pop
+      add
+      add
+      swap1
+      jump	// out
+    tag_218:
+      0x01
+      dup2
+      0x20
+      swap3
+      swap5
+      swap4
+      swap5
+      sload
+      dup4
+      dup6
+      dup8
+      add
+      add
+      mstore
+      add
+      swap2
+      add
+      swap2
+      swap1
+      jump(tag_217)
+    tag_213:
+      swap2
+      pop
+      pop
+      0x20
+      swap4
+      swap5
+      pop
+      0xff
+      swap3
+      swap2
+      swap3
+      not
+      and
+      dup4
+      dup4
+      add
+      mstore
+      iszero
+      iszero
+      0x05
+      shl
+      add
+      add
+      swap1
+      jump	// out
+    tag_6:
+      swap1
+      0x1f
+      dup1
+      not
+      swap2
+      add
+      and
+      dup2
+      add
+      swap1
+      dup2
+      lt
+      0xffffffffffffffff
+      dup3
+      gt
+      or
+      tag_220
+      jumpi
+      0x40
+      mstore
+      jump	// out
+    tag_220:
+      mstore(0x00, shl(0xe0, 0x4e487b71))
+      mstore(0x04, 0x41)
+      revert(0x00, 0x24)
+    tag_7:
+      swap2
+      swap1
+      dup3
+      add
+      dup1
+      swap3
+      gt
+      tag_146
+      jumpi
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5656:5956  function _transfer(address from, address to, uint256 value) internal {... */
+    tag_8:
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5739:5757  from == address(0) */
+      dup2
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5735:5821  if (from == address(0)) {... */
+      tag_224
+      jumpi
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+      swap2
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5834:5850  to == address(0) */
+      dup3
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5830:5916  if (to == address(0)) {... */
+      tag_150
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup2
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+      mstore
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      keccak256
+      sload
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6603:6622  fromBalance < value */
+      dup2
+      dup2
+      lt
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6599:6714  if (fromBalance < value) {... */
+      tag_228
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup2
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+      0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap3
+      0x20
+      swap3
+      dup6
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup5
+      mstore
+      sub
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      keccak256
+      sstore
+      dup5
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup3
+      mstore
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      keccak256
+      dup2
+      dup2
+      sload
+      add
+      swap1
+      sstore
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":7346:7371  Transfer(from, to, value) */
+      log3
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5656:5956  function _transfer(address from, address to, uint256 value) internal {... */
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6599:6714  if (fromBalance < value) {... */
+    tag_228:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6649:6699  ERC20InsufficientBalance(from, fromBalance, value) */
+      dup3
+      shl(0xe2, 0x391434e3)
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6649:6699  ERC20InsufficientBalance(from, fromBalance, value) */
+      mstore
+      0x04
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0x24
+      mstore
+      0x44
+      mstore
+      0x64
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":6649:6699  ERC20InsufficientBalance(from, fromBalance, value) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5735:5821  if (from == address(0)) {... */
+    tag_224:
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5780:5810  ERC20InvalidSender(address(0)) */
+      shl(0xe1, 0x4b637e8f)
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5780:5810  ERC20InvalidSender(address(0)) */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5780:5810  ERC20InvalidSender(address(0)) */
+      0x04
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0x24
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5755:5756  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":5780:5810  ERC20InvalidSender(address(0)) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3845:4107  function _domainSeparatorV4() internal view returns (bytes32) {... */
+    tag_9:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3929:3933  this */
+      address
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3938:3949  _cachedThis */
+      immutable("0x0cac94dd8fa8b46dcb473f6a9efd44c79437a341d155face60953ba7292fa128")
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3921:3949  address(this) == _cachedThis */
+      eq
+      dup1
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3921:3984  address(this) == _cachedThis && block.chainid == _cachedChainId */
+      tag_230
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3845:4107  function _domainSeparatorV4() internal view returns (bytes32) {... */
+    tag_231:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3917:4101  if (address(this) == _cachedThis && block.chainid == _cachedChainId) {... */
+      iszero
+      tag_232
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4007:4029  _cachedDomainSeparator */
+      immutable("0xff86023f246b2cd604439ec36dd08070fda9a84bfebf677a354fd041e3509e75")
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4000:4029  return _cachedDomainSeparator */
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3917:4101  if (address(this) == _cachedThis && block.chainid == _cachedChainId) {... */
+    tag_232:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload(0x40)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+      0x20
+      dup2
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      0x8b73c3c69bb8fe3d512ecc4cf759cc79239f7b179b0ffacaa9a75d522b39400f
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup3
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4226:4237  _hashedName */
+      immutable("0xcab6b469e411f2f1a1a63b7a352484b6446ac4f04b2cdfa437beb9293c27ba98")
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4239:4253  _hashedVersion */
+      immutable("0xcbf74af01cbe1015e9ac85ea14fe824611550c769e9107467f16a4ac714457df")
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      0x60
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4255:4268  block.chainid */
+      chainid
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      0x80
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3929:3933  this */
+      address
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      0xa0
+      dup3
+      add
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":2079:2174  keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)") */
+      0xa0
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4204:4284  abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this)) */
+      dup2
+      mstore
+      tag_234
+      0xc0
+      dup3
+      tag_6
+      jump	// in
+    tag_234:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4194:4285  keccak256(abi.encode(TYPE_HASH, _hashedName, _hashedVersion, block.chainid, address(this))) */
+      swap1
+      keccak256
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":4060:4090  return _buildDomainSeparator() */
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3921:3984  address(this) == _cachedThis && block.chainid == _cachedChainId */
+    tag_230:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3970:3984  _cachedChainId */
+      pop
+      immutable("0x1ed118b890fb17bfde2171d286512a9ec35519f5671f36b3347d34c44d7a13d4")
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3953:3966  block.chainid */
+      chainid
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3953:3984  block.chainid == _cachedChainId */
+      eq
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":3921:3984  address(this) == _cachedThis && block.chainid == _cachedChainId */
+      jump(tag_231)
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1796:1958  function _checkOwner() internal view virtual {... */
+    tag_10:
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1710:1716  _owner */
+      0x08
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      sload
+      sub(shl(0xa0, 0x01), 0x01)
+      and
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1855:1878  owner() != _msgSender() */
+      sub
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1851:1952  if (owner() != _msgSender()) {... */
+      tag_235
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1796:1958  function _checkOwner() internal view virtual {... */
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1851:1952  if (owner() != _msgSender()) {... */
+    tag_235:
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1901:1941  OwnableUnauthorizedAccount(_msgSender()) */
+      mstore(0x00, shl(0xe0, 0x118cdaa7))
+        /* "lib/openzeppelin-contracts/contracts/utils/Context.sol":735:745  msg.sender */
+      caller
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1901:1941  OwnableUnauthorizedAccount(_msgSender()) */
+      0x04
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      0x24
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/access/Ownable.sol":1901:1941  OwnableUnauthorizedAccount(_msgSender()) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9949:10381  function _approve(address owner, address spender, uint256 value, bool emitEvent) internal virtual {... */
+    tag_11:
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10061:10080  owner == address(0) */
+      dup2
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10057:10146  if (owner == address(0)) {... */
+      tag_176
+      jumpi
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      and
+      swap2
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10159:10180  spender == address(0) */
+      dup3
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10155:10245  if (spender == address(0)) {... */
+      tag_178
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x20
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10333:10364  Approval(owner, spender, value) */
+      0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap2
+      dup4
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10078:10079  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9105:9109  true */
+      0x01
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup3
+      mstore
+      0x40
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10078:10079  0 */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      keccak256
+      dup6
+      0x00
+      mstore
+      dup3
+      mstore
+      dup1
+      keccak256(0x00, 0x40)
+      sstore
+      mload(0x40)
+      swap1
+      dup2
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":10333:10364  Approval(owner, spender, value) */
+      log3
+        /* "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol":9949:10381  function _approve(address owner, address spender, uint256 value, bool emitEvent) internal virtual {... */
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3385:3652  function toStringWithFallback(ShortString value, string storage store) internal pure returns (string memory) {... */
+    tag_12:
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      0xff
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3508:3554  ShortString.unwrap(value) != FALLBACK_SENTINEL */
+      dup2
+      eq
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_241
+      jumpi
+      0xff
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2652:2692  uint256(ShortString.unwrap(sstr)) & 0xFF */
+      dup2
+      and
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2706:2717  result > 31 */
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2715:2717  31 */
+      0x1f
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2706:2717  result > 31 */
+      dup3
+      gt
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2702:2771  if (result > 31) {... */
+      tag_243
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload(0x40)
+      swap2
+      tag_245
+      0x40
+      dup5
+      tag_6
+      jump	// in
+    tag_245:
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2311:2313  32 */
+      0x20
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup1
+      dup5
+      mstore
+      dup4
+      dup2
+      add
+      swap2
+      swap1
+      calldatasize
+      dup4
+      calldatacopy
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2367:2457  assembly {... */
+      dup4
+      mstore
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3570:3592  return toString(value) */
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2702:2771  if (result > 31) {... */
+    tag_243:
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2740:2760  InvalidShortString() */
+      mstore(0x00, shl(0xe2, 0x2cd44ac3))
+      revert(0x00, 0x04)
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3504:3646  if (ShortString.unwrap(value) != FALLBACK_SENTINEL) {... */
+    tag_241:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      pop
+      mload(0x40)
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_246
+      dup2
+      tag_247
+      dup2
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6126:6139  _nameFallback */
+      0x05
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_5
+      jump	// in
+    tag_247:
+      sub
+      dup3
+      tag_6
+      jump	// in
+    tag_246:
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3623:3635  return store */
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3385:3652  function toStringWithFallback(ShortString value, string storage store) internal pure returns (string memory) {... */
+    tag_13:
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      0xff
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3508:3554  ShortString.unwrap(value) != FALLBACK_SENTINEL */
+      dup2
+      eq
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_248
+      jumpi
+      0xff
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2652:2692  uint256(ShortString.unwrap(sstr)) & 0xFF */
+      dup2
+      and
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2706:2717  result > 31 */
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2715:2717  31 */
+      0x1f
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2706:2717  result > 31 */
+      dup3
+      gt
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":2702:2771  if (result > 31) {... */
+      tag_243
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload(0x40)
+      swap2
+      tag_245
+      0x40
+      dup5
+      tag_6
+      jump	// in
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":3504:3646  if (ShortString.unwrap(value) != FALLBACK_SENTINEL) {... */
+    tag_248:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      pop
+      mload(0x40)
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_246
+      dup2
+      tag_247
+      dup2
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol":6584:6600  _versionFallback */
+      0x06
+        /* "lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol":1390:1456  0x00000000000000000000000000000000000000000000000000000000000000FF */
+      tag_5
+      jump	// in
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":5140:6670  function tryRecover(... */
+    tag_14:
+      swap2
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6199:6265  0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0 */
+      0x7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a0
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6186:6265  uint256(s) > 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0 */
+      dup5
+      gt
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6182:6346  if (uint256(s) > 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0) {... */
+      tag_255
+      jumpi
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      swap2
+      0x20
+      swap4
+      0x80
+      swap3
+      0xff
+      0x00
+      swap6
+      mload(0x40)
+      swap5
+      dup6
+      mstore
+      and
+      dup7
+      dup5
+      add
+      mstore
+      0x40
+      dup4
+      add
+      mstore
+      0x60
+      dup3
+      add
+      mstore
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6457:6481  ecrecover(hash, v, r, s) */
+      dup3
+      dup1
+      mstore
+      0x01
+      gas
+      staticcall
+      iszero
+      tag_257
+      jumpi
+      mload(0x00)
+      sub(shl(0xa0, 0x01), 0x01)
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      dup2
+      and
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6495:6515  signer == address(0) */
+      iszero
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6491:6604  if (signer == address(0)) {... */
+      tag_259
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6614:6663  return (signer, RecoverError.NoError, bytes32(0)) */
+      swap1
+      0x00
+      swap1
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":5140:6670  function tryRecover(... */
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6491:6604  if (signer == address(0)) {... */
+    tag_259:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6531:6593  return (address(0), RecoverError.InvalidSignature, bytes32(0)) */
+      pop
+      0x00
+      swap1
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6457:6481  ecrecover(hash, v, r, s) */
+      0x01
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6531:6593  return (address(0), RecoverError.InvalidSignature, bytes32(0)) */
+      swap1
+      0x00
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6457:6481  ecrecover(hash, v, r, s) */
+    tag_257:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mload(0x40)
+      returndatasize
+      0x00
+      dup3
+      returndatacopy
+      returndatasize
+      swap1
+      revert
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6182:6346  if (uint256(s) > 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0) {... */
+    tag_255:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6281:6335  return (address(0), RecoverError.InvalidSignatureS, s) */
+      pop
+      pop
+      pop
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6297:6298  0 */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6281:6335  return (address(0), RecoverError.InvalidSignatureS, s) */
+      swap2
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6301:6331  RecoverError.InvalidSignatureS */
+      0x03
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":6281:6335  return (address(0), RecoverError.InvalidSignatureS, s) */
+      swap2
+      swap1
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7196:7728  function _throwError(RecoverError error, bytes32 errorArg) private pure {... */
+    tag_15:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      dup2
+      lt
+      iszero
+      tag_261
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7282:7311  error == RecoverError.NoError */
+      dup1
+      tag_263
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7327:7334  return; */
+      pop
+      pop
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7278:7722  if (error == RecoverError.NoError) {... */
+    tag_263:
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x01
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7378:7416  error == RecoverError.InvalidSignature */
+      dup2
+      sub
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      tag_265
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7439:7462  ECDSAInvalidSignature() */
+      shl(0xe0, 0xf645eedf)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7439:7462  ECDSAInvalidSignature() */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7439:7462  ECDSAInvalidSignature() */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7374:7722  if (error == RecoverError.InvalidSignature) {... */
+    tag_265:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7492:7527  RecoverError.InvalidSignatureLength */
+      0x02
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7483:7527  error == RecoverError.InvalidSignatureLength */
+      dup2
+      sub
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7492:7527  RecoverError.InvalidSignatureLength */
+      tag_267
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7550:7596  ECDSAInvalidSignatureLength(uint256(errorArg)) */
+      pop
+      shl(0xe0, 0xfce698f7)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7550:7596  ECDSAInvalidSignatureLength(uint256(errorArg)) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      mstore
+      0x24
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7550:7596  ECDSAInvalidSignatureLength(uint256(errorArg)) */
+      revert
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7479:7722  if (error == RecoverError.InvalidSignatureLength) {... */
+    tag_267:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7626:7656  RecoverError.InvalidSignatureS */
+      0x03
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7617:7656  error == RecoverError.InvalidSignatureS */
+      eq
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7613:7722  if (error == RecoverError.InvalidSignatureS) {... */
+      tag_269
+      jumpi
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7479:7722  if (error == RecoverError.InvalidSignatureLength) {... */
+      pop
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7196:7728  function _throwError(RecoverError error, bytes32 errorArg) private pure {... */
+      jump	// out
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7613:7722  if (error == RecoverError.InvalidSignatureS) {... */
+    tag_269:
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7679:7711  ECDSAInvalidSignatureS(errorArg) */
+      shl(0xe2, 0x35e2f383)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7679:7711  ECDSAInvalidSignatureS(errorArg) */
+      mstore
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      0x04
+      mstore
+      0x24
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7679:7711  ECDSAInvalidSignatureS(errorArg) */
+      revert
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+    tag_261:
+      shl(0xe0, 0x4e487b71)
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      mstore
+      mstore(0x04, 0x21)
+      0x24
+        /* "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol":7291:7311  RecoverError.NoError */
+      0x00
+        /* "src/MyToken.sol":515:1610  contract MyToken is ERC20Permit, Ownable {... */
+      revert
+
+    auxdata: 0xa2646970667358221220442868c54a88fffcd1f9abaf5ccd97b3846f4ed212189a46b60ba968fb1052c864736f6c634300081c0033
+}
+

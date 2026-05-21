@@ -370,7 +370,7 @@ POST /api/token/transfer
 
 ### Week 9 进展：Foundry 测试套件 + Gas 基线
 
-**86 个测试全部通过**，覆盖 4 个核心合约 + Gas 对比测试：
+**86 个测试全部通过**，覆盖 6 个核心合约 + Gas 对比测试：
 
 | 合约 | 测试数 | 覆盖范围 |
 |------|--------|---------|
@@ -414,20 +414,44 @@ POST /api/token/transfer
 | 4 | 事件替代存储 | 分析后发现现有设计已合理，无冗余 mapping |
 | 5 | Calldata 替代 Memory | external 函数只读参数改 calldata，节省 copy 开销 |
 
+### Week 11 进展：EVM 深入与 Opcode
+
+**129 个测试全部通过**，新增 43 个 Yul/Opcode 实验测试：
+
+| 新增合约 | 测试数 | 说明 |
+|---------|--------|------|
+| YulExamples | 20 | Yul 内联汇编 vs Solidity Gas 对比（8 组） |
+| MyTokenWithYul | 13 | 用 Yul 重写 balanceOf/totalSupply/allowance |
+| RevertDemo | 10 | 6 种 revert 场景 + Opcode trace 调试 |
+
+**Yul vs Solidity Gas 对比关键发现：**
+
+| 操作 | Solidity | Yul | 节省率 |
+|------|----------|-----|--------|
+| balanceOf（mapping 读） | 9,766 | 965 | **90%** |
+| totalSupply（slot 读） | 2,675 | 992 | **63%** |
+| maxSupply | 3,042 | 818 | **73%** |
+| sum(100)（循环） | 11,344 | 6,832 | **40%** |
+| setPacked（打包写入） | 28,047 | 1,412 | **95%** |
+| getValue（简单读取） | 1,085 | 1,103 | -2%（无优势） |
+
+**核心教训**：Yul 在 mapping 读取、packed storage、循环场景有巨大优势；简单读写 Solidity 优化器已经足够好。
+
 ### 后续计划
 
 | 周次 | 主题 | 目标 |
 |------|------|------|
-| Week 11 | EVM 深入与 Opcode | 字节码分析、Yul 内联汇编、Opcode 调试 |
 | Week 12 | MEV 分析与防御 | Flashbots Protect、Slippage 库、Commit-Reveal、安全交易脚本 |
 
 ### 运行测试
 
 ```bash
 cd foundry-phase3
-forge test                                    # 运行全部 86 个测试
+forge test                                    # 运行全部 129 个测试
 forge test --match-contract SimpleAMMTest     # 运行指定合约测试
 forge test --match-contract GasComparisonTest # 运行 Gas 对比测试
+forge test --match-contract YulExamplesTest   # 运行 Yul 实验
+forge test --match-contract RevertDemoTest -vvvv  # Opcode trace 调试
 forge test --gas-report                       # 生成 Gas 报告
 forge snapshot                                # 生成 Gas 快照
 ```
