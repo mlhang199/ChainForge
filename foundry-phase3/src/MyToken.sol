@@ -1,0 +1,1 @@
+../../contracts/src/MyToken.sol
