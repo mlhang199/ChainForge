@@ -370,7 +370,7 @@ POST /api/token/transfer
 
 ### Week 9 进展：Foundry 测试套件 + Gas 基线
 
-**71 个测试全部通过**，覆盖 4 个核心合约：
+**86 个测试全部通过**，覆盖 4 个核心合约 + Gas 对比测试：
 
 | 合约 | 测试数 | 覆盖范围 |
 |------|--------|---------|
@@ -378,6 +378,8 @@ POST /api/token/transfer
 | MyNFT | 14 | mint、batchMint、权限控制、maxSupply、baseURI、transfer |
 | SimpleAMM | 30 | 流动性操作、swap、K值验证、事件、pause、feeTo、sync/skim、slippage |
 | ChainForgeRouter | 14 | 池管理、单跳/多跳查询与swap、slippage、deadline |
+| CheatcodeDemo | 6 | vm.prank/deal/warp/expectRevert/startPrank/expectEmit |
+| GasComparison | 9 | 原版 vs 优化版 Gas 对比测试 |
 
 **Top 5 最昂贵函数（Gas 基线）：**
 
@@ -389,11 +391,33 @@ POST /api/token/transfer
 | 4 | MyNFT | batchMint | 99,906 |
 | 5 | SimpleAMM | swap | 57,047 |
 
+### Week 10 进展：Gas 优化实战
+
+5 大 Gas 优化技巧全部应用，创建优化版合约对比 Gas 消耗：
+
+**优化效果：**
+
+| 函数 | 原版 Gas | 优化版 Gas | 节省 | 节省率 |
+|------|---------|-----------|------|--------|
+| SimpleAMM.addLiquidity | 297,917 | 241,065 | 56,852 | **19%** |
+| SimpleAMM.swap | 28,822 | 18,774 | 10,048 | **34%** |
+| Router.swap(2-hop) | 184,127 | 174,479 | 9,648 | 5% |
+| MyNFT.batchMint(20) | 527,787 | 524,044 | 3,743 | 0.7% |
+
+**5 大优化技巧：**
+
+| # | 技巧 | 核心发现 |
+|---|------|---------|
+| 1 | 存储槽打包 | feeTo + blockTimestampLast 共享 slot，省 1 slot |
+| 2 | 消除冗余写入 | _update() 重复写 reserve 是最大浪费，swap 优化 34% |
+| 3 | unchecked + 缓存 | batchMint 缓存 _nextTokenId + unchecked 循环 |
+| 4 | 事件替代存储 | 分析后发现现有设计已合理，无冗余 mapping |
+| 5 | Calldata 替代 Memory | external 函数只读参数改 calldata，节省 copy 开销 |
+
 ### 后续计划
 
 | 周次 | 主题 | 目标 |
 |------|------|------|
-| Week 10 | Gas 优化实战 | 存储槽打包、缓存变量、unchecked循环、calldata优化，目标降低 20%+ |
 | Week 11 | EVM 深入与 Opcode | 字节码分析、Yul 内联汇编、Opcode 调试 |
 | Week 12 | MEV 分析与防御 | Flashbots Protect、Slippage 库、Commit-Reveal、安全交易脚本 |
 
@@ -401,8 +425,9 @@ POST /api/token/transfer
 
 ```bash
 cd foundry-phase3
-forge test                                    # 运行全部 71 个测试
+forge test                                    # 运行全部 86 个测试
 forge test --match-contract SimpleAMMTest     # 运行指定合约测试
+forge test --match-contract GasComparisonTest # 运行 Gas 对比测试
 forge test --gas-report                       # 生成 Gas 报告
 forge snapshot                                # 生成 Gas 快照
 ```
