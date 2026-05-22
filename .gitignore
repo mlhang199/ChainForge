@@ -23,8 +23,12 @@ contracts/typechain-types/
 contracts/types/
 contracts/ignition/deployments/
 
-# Foundry (if needed later)
+# Foundry
 contracts/out/
+foundry-phase3/cache/
+foundry-phase3/out/
+foundry-phase3/broadcast/
+foundry-phase3/lib/
 
 # OS
 .DS_Store
