@@ -358,7 +358,7 @@ POST /api/token/transfer
 | React 前端 | 第 3 周 | 钱包连接、DApp 交互 | ✅ 已完成 |
 | 整合完善 | 第 4 周 | 链上交易、元数据、部署 | ✅ 已完成 |
 | AMM DEX | 第 8 周 | 简化版 Uniswap V2：恒定乘积 + 流动性 + Swap | ✅ 已完成 |
-| EVM 底层与 MEV | 第 9-12 周 | Foundry 测试 + Gas 优化 + EVM/Opcode + MEV 防御 | 🔄 进行中 |
+| EVM 底层与 MEV | 第 9-12 周 | Foundry 测试 + Gas 优化 + EVM/Opcode + MEV 防御 | ✅ 已完成 |
 
 ## 第三阶段：EVM 底层与 MEV（phase3-evm-mev 分支）
 
@@ -437,23 +437,41 @@ POST /api/token/transfer
 
 **核心教训**：Yul 在 mapping 读取、packed storage、循环场景有巨大优势；简单读写 Solidity 优化器已经足够好。
 
-### 后续计划
+### Week 12 进展：MEV 分析与防御
 
-| 周次 | 主题 | 目标 |
-|------|------|------|
-| Week 12 | MEV 分析与防御 | Flashbots Protect、Slippage 库、Commit-Reveal、安全交易脚本 |
+**170 个测试全部通过**，新增 41 个 MEV 防御测试：
+
+| 新增合约/测试 | 测试数 | 说明 |
+|--------------|--------|------|
+| SlippageProtection | 17 | 滑点保护库：精确 BPS 计算、边界值、fuzz 测试 |
+| CommitRevealAuction | 22 | Commit-Reveal 拍卖：防 front-run 出价 |
+| RouterSlippageIntegration | 2 | 三明治攻击模拟 + SlippageProtection 集成 |
+
+**MEV 防御产出：**
+
+| 产出 | 说明 |
+|------|------|
+| `SlippageProtection.sol` | 基点（BPS）滑点保护库，可集成到任意 swap 函数 |
+| `CommitRevealAuction.sol` | Commit-Reveal 拍卖合约，防止出价被 front-run |
+| `scripts/secure_swap.js` | Flashbots Protect RPC 安全交易脚本 |
+| `backend/.../mev/SecureSwapService.java` | Java 版安全交易服务 |
+| `docs/MEV_DEFENSE_GUIDE.md` | MEV 防御策略指南（威胁模型 + 策略矩阵） |
+| `notes/week12_mev_case_study.md` | 真实三明治攻击案例分析 |
+
+**三明治攻击模拟验证：** 在测试中用 SlippageProtection 库成功检测到 front-run 导致的滑点超标，交易自动 revert。
 
 ### 运行测试
 
 ```bash
 cd foundry-phase3
-forge test                                    # 运行全部 129 个测试
-forge test --match-contract SimpleAMMTest     # 运行指定合约测试
-forge test --match-contract GasComparisonTest # 运行 Gas 对比测试
-forge test --match-contract YulExamplesTest   # 运行 Yul 实验
-forge test --match-contract RevertDemoTest -vvvv  # Opcode trace 调试
-forge test --gas-report                       # 生成 Gas 报告
-forge snapshot                                # 生成 Gas 快照
+forge test                                        # 运行全部 170 个测试
+forge test --match-contract SlippageProtectionTest # 滑点保护测试
+forge test --match-contract CommitRevealAuctionTest # Commit-Reveal 测试
+forge test --match-contract SimpleAMMTest          # AMM 测试
+forge test --match-contract GasComparisonTest      # Gas 对比测试
+forge test --match-contract YulExamplesTest        # Yul 实验
+forge test --gas-report                            # 生成 Gas 报告
+forge snapshot                                     # 生成 Gas 快照
 ```
 
 - 永远不要将私钥提交到 Git
